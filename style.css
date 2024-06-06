@@ -75,9 +75,20 @@ li {
 
 .sideimg {
     position: absolute;
-    top: 5px;
+    top: 250px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #fff9;
-    right: 5px;
-    width: 50vw;
+    right: 10vw;
+    width: 40vw;
+}
+
+.cpyr {
+    color: #ddd;
+}
+
+.fixed-small {
+    width: 27vw;
+}
+.widthtwf {
+    width: 26vw;
 }
