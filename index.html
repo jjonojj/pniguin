@@ -7,10 +7,10 @@
     <title>pniguin</title>
 </head>
 <body>
-    <img class="sideimg" src="./coldicebrrrr.jpg" alt="">
     <img src="./pingui2.png" class="himg" alt="">
-    <h1 id="headr1">der pinguin</h1>
-    <div class="outerbox fixed-small">
+    <h1 id="headr1">der Pinguin</h1>
+    <div class="outerbox dynamic">
+        <img class="sideimg" src="./coldicebrrrr.jpg" alt="">
         <h3>steckbrief</h3>
         <ul>
             <li>Familie: Pinguine (eigene Familie)</li>
@@ -19,19 +19,15 @@
             <li>Gewicht: bis zu 40kg</li>
             <li>Größe: 45 cm bis ~ 1m</li>
         </ul>
-    </div>
-
-    <div class="outerbox fixed-small">
+        <br>
         <img class="imginter1 widthtwf" src="./pingu-swim.jpg" alt="">
         <div class="imgdesc">schwimmender pinguin</div>
-    </div>
-
-    <div class="outerbox">
+        <br>
         <h3>fakten</h3>
         <ul>
             <li> Pinguine sind sehr gute Schwimmer. 
                 Die von Pinguinen durchschnittlich beim Schwimmen 
-                erreichte Geschwindigkeit beträgt Messungen zufolge 
+                erreichte Geschwindigkeit beträgt Messungen<br> zufolge 
                 etwa fünf bis zehn Kilometer pro Stunde, obwohl in 
                 kurzzeitigen Sprints 
                 auch höhere Geschwindigkeiten denkbar sind.</li>
@@ -41,20 +37,41 @@
                 jeweils kurzzeitig das Wasser.
             </li>
             <li>
-                Je nach Größe ernähren sich Pinguine von Fischen, häufig zum Beispiel vom Antarktischen Silberfisch (Pleuragramma antarctica), von Sardellen (Engraulidae) oder Sardinen (in Clupeidae), von Krebstieren wie Krill oder kleinen Tintenfischen, die aktiv auf Sicht gejagt und noch unter Wasser verschluckt werden. Teilen sich unterschiedliche Arten denselben Lebensraum, so haben sie in der Regel unterschiedliche Nahrungsvorlieben: So verzehren Adelie-Pinguine und Zügelpinguine Krill unterschiedlicher Größe.
+                Je nach Größe ernähren sich Pinguine von Fischen, häufig zum Beispiel vom Antarktischen Silberfisch (Pleuragramma antarctica), <br>von Sardellen (Engraulidae) oder Sardinen (in Clupeidae), 
+                von Krebstieren wie Krill oder kleinen Tintenfischen, die aktiv auf Sicht gejagt und noch unter Wasser verschluckt werden.<br> Teilen sich unterschiedliche Arten denselben Lebensraum, so haben sie in der Regel unterschiedliche Nahrungsvorlieben: So verzehren Adelie-Pinguine und Zügelpinguine Krill unterschiedlicher Größe.
             </li>
-        </ul>
-    </div>
-
-    <div class="outerbox dynamic">
+        </ul><br>
         <img class="imginter1" width="512" src="bebi.jpeg" alt="">
         <div class="imgdesc">pinguin-baby</div>
-    </div>
-
+        <br>
     <!--video-->
-    <div class="outerbox dynamic">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-GXv22e1W3o?si=QKoXT9ngVP0J96Gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br><hr><br><div>
+            <span style="margin-right: 10px;">Findest du Pinguine gut?</span>
+            <select id="kuhljn" name="kuhl" class="exc-cur">
+                <option value="australia">Vielleicht</option>
+                <option value="canada">Ja</option>
+                <option value="usa">Nein</option>
+              </select>
+        </div>
     </div>
-    <span class="cpyr">© Jonas Piechl. Pinguine sind kuhl</span>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+          }
+        }
+      </script>
+      <script type="module" src="main.js"></script>
 </body>
 </html>

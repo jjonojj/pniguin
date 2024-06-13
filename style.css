@@ -2,13 +2,23 @@
 /*nerd fonts*/
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
+.exc-cur {
+    cursor: url(./cursor2.png)0 0, auto;
+}
+
 body {
     background-color: #0f0f0f;
     color: #fff;
     font-family: "Poppins", sans-serif;
     padding: 20px;
-    background-image: url(./wallp1.jpg);
+    background-color: #000000;
+opacity: 1;
+background-image:  repeating-linear-gradient(45deg, #090909 25%, transparent 25%, transparent 75%, #090909 75%, #090909), repeating-linear-gradient(45deg, #090909 25%, #000000 25%, #000000 75%, #090909 75%, #090909);
+background-position: 0 0, 31px 31px;
+background-size: 62px 62px;
+overflow-x: hidden;
     background-repeat: repeat;
+    cursor: url(./cursor2.png)0 0, auto;
 }
 
 h1 {
@@ -24,12 +34,13 @@ h1 {
 .outerbox {
     margin: 20px 0px;
     background-color: #fff2;
-    width: 70vw;
+    display: block;
     backdrop-filter: blur(10px);
     border: #fff2 2px solid;
-    padding: 15px;
+    padding: 25px;
     box-shadow: 0px 0px 20px 10px #000a;
     border-radius: 15px;
+    padding-right: 100px;
 }
 
 h3 {
@@ -51,12 +62,16 @@ li {
 
 .himg {
     width: 256px;
+    z-index: 1000;
     filter: drop-shadow(10px 10px 0px #fff5);
 }
+
+
 
 .imginter1 {
     margin-right: 5px;
     border-radius: 5px;
+    z-index: 1000;
     box-shadow: 0px 0px 5px #0006;
 }
 
@@ -75,11 +90,12 @@ li {
 
 .sideimg {
     position: absolute;
-    top: 250px;
+    display: inline;
+    width: 400px;
+    right: 20px;
+    top: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #fff9;
-    right: 10vw;
-    width: 40vw;
+    box-shadow: 0px 0px 10px #fff8;
 }
 
 .cpyr {
@@ -91,4 +107,15 @@ li {
 }
 .widthtwf {
     width: 26vw;
+}
+
+select {
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #fff7;
+    background-color: #fff7;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px #0009;
+    color: #000;
+    padding: 10px;
+    border-radius: 7px;
 }
